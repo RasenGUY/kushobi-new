@@ -9,6 +9,30 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Delius", "Papyrus", "cursive";
 }
 
-p {
-    font-size: rem-calc(50px);
+:root{
+    --base-color-light: #fefbf0;
+    --base-color-dark: #0c0c0c;
+    --theme-color: #fecc33;
+    --theme2-color: #a50021;
+    --highlight-color: #86cb9c;
+}
+
+/* foundation settings */
+.top-bar, .top-bar ul, .menu {
+    background-color: var(--base-color-light);
+}
+
+
+/* landing - hero */
+
+.landing-hero {
+    background-color: var(--theme-color);
+}
+
+/* navigation */
+.top-bar {
+    width: 90%; 
+}
+.logo {
+    width: 10rem;
 }

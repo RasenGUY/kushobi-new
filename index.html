@@ -26,21 +26,33 @@
 </head>
 <body>
     <!-- hero section landing page -->
-    <section>
-        <div class="overlay"></div>
+    <section class="landing-hero">
         <img src="static\images\logo\kushobi-logo.png" alt="Kushobi Vodoo Ninja In Training"><!-- background -->
     </section>
 
-    <!-- Navigation normal window-->
-    <nav>
-        <ul>
-            <li><a href="\static\images\logo\kushobi-logo.png"></a>LOGO</li>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">CHARACTERS</a></li>
-            <li><a href="">BLOG</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation -->
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="menu align-center" id="main-menu">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><a href="#"><img src="\static\images\logo\kushobi-logo.png" alt="Kushobi Logo" class="logo"></a></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu expanded" data-dropdown-menu>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CHARACTERS</a></li>
+                    <li><a href="">BLOG</a></li>
+                </ul>
+            </div>        
+        </div >
+    </div>  
 
     <!-- section what is kushobi -->
     <section>
