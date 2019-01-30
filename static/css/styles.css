@@ -1,15 +1,19 @@
-
-body  {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Delius', "Papyrus", "cursive";
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Delius", "Papyrus", "cursive";
 }
 
-:root{
+:root {
     --base-color-light: #fefbf0;
     --base-color-dark: #0c0c0c;
     --theme-color: #fecc33;
@@ -18,8 +22,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* foundation settings */
-.top-bar, .top-bar ul, .menu {
+.top-bar,
+.top-bar ul,
+.menu {
     background-color: var(--base-color-light);
+}
+
+.title-bar {
+    background-color: var(--theme2-color);
+    color: var(--base-color-light);
 }
 
 
@@ -31,8 +42,9 @@ h1,h2,h3,h4,h5,h6 {
 
 /* navigation */
 .top-bar {
-    width: 90%; 
+    width: 90%;
 }
+
 .logo {
     width: 10rem;
 }
