@@ -42,7 +42,7 @@ h6 {
 }
 
 .grid-container {
-    width: 90%;
+    width: 70%;
 }
 
 .top-bar-right .menu > li a:hover {
@@ -73,7 +73,7 @@ a {
 
 /* navigation */
 .top-bar {
-    width: 90%;
+    width: 70%;
 }
 
 .logo {
@@ -84,7 +84,7 @@ a {
 /* what is kushobi section */
 .mockup-container {
     position: absolute;
-    width: 150%;
+    width: 180%;
 }
 .mockup{
     width: 100%;
