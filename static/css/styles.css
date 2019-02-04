@@ -28,8 +28,8 @@ h6 {
 }
 
 
-
 /* foundation settings */
+
 .top-bar,
 .top-bar ul,
 .menu {
@@ -45,42 +45,24 @@ h6 {
     width: 90%;
 }
 
-/* padding  */
-.padding-small {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;    
+
+.button {
+    background-color: var(--highlight-color);
+    color: var(--base-color-light);
 }
-
-.padding-normal {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    .button:hover {
+        background-color: #629472;
+    }
+    .button.large {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+a { 
+    color: var(--base-color-dark);
 }
-
-.padding-big {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-}
-
-/* margin  */
-.margin-small {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.margin-normal {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.margin-big {
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-
+    
 
 /* landing - hero */
-
 .landing-hero {
     background-color: var(--theme-color);
 }
@@ -96,15 +78,56 @@ h6 {
 
 
 /* what is kushobi section */
-
-.landing-image{
-    position: relative;
-    left: 20rem; 
-    top: 5rem
+.mockup-container {
+    position: absolute;
+    width: 150%;
 }
 .mockup{
-    overflow: hidden;
-    width: 140rem;
-    shape-outside: polygon(nonzero, 58.8% 11.25%, 77.05% 10.4%, 99.65% 32.55%, 100% 67.55%, 96.6% 64.95%, 69.2% 79.15%, 29.85% 98.8%, 28.2% 88.9%, 18.8% 33.75%, 32.85% 23.3%, 42.25% 18.7%, 49.2% 20.35%);
-    -webkit-shape-outside: polygon(nonzero,58.8% 11.25%, 77.05% 10.4%, 99.65% 32.55%, 100% 67.55%, 96.6% 64.95%, 69.2% 79.15%, 29.85% 98.8%, 28.2% 88.9%, 18.8% 33.75%, 32.85% 23.3%, 42.25% 18.7%, 49.2% 20.35%);
+    width: 100%;
+    z-index: 0;
 }
+    
+
+.about {
+    width: 100%;
+    position: relative;
+    max-height: 50rem;
+    z-index: -5;
+    background-image: url('/static/images/landing/about-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* make these parts responsive */
+    /* transform: translateY(-5rem); */
+}
+    .about .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: var(--theme-color);
+        opacity: 0.4;
+        z-index: -5;
+    }
+
+    .about .grid-container {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .clearfix {
+        overflow: hidden;
+    }
+
+
+    .headshot {
+        width:20em;
+        height: 20em;
+        max-height: 15rem;
+        max-width: 15rem;
+
+        margin-right: 2rem;
+        shape-outside: circle();
+        -webkit-shape-outside: circle();
+        -moz-shape-outside: circle();
+        -o-shape-outside: circle();
+    }
