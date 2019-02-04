@@ -45,6 +45,10 @@ h6 {
     width: 90%;
 }
 
+.top-bar-right .menu > li a:hover {
+    color: var(--base-color-dark);
+    border-bottom: 2px solid var(--highlight-color); 
+}
 
 .button {
     background-color: var(--highlight-color);
@@ -131,3 +135,32 @@ a {
         -moz-shape-outside: circle();
         -o-shape-outside: circle();
     }
+
+/* characters section */
+.characters-section header {
+    text-align: center;
+}
+    .characters-section header h2 {
+        border-bottom: solid 2px var(--highlight-color);
+        display: inline-block;
+        line-height: -0.5rem;
+    }
+
+.character {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+    
+    .character img {
+        width: 10rem;
+        filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
+    }
+
+    .oxie {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 17rem;
+    }
+        .oxie img {
+            filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
+        }
