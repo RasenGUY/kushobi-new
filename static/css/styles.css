@@ -99,7 +99,7 @@ a {
 }
 
 .logo {
-    padding: 0;
+    padding: 0 !important;
 }
 
 
@@ -113,7 +113,6 @@ a {
     width: 100%;
     z-index: 0;
 }
-    
 
 .about {
     width: 100%;

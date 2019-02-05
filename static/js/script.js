@@ -21,7 +21,7 @@ enquire.register("screen and (max-width: 639px)", {
         menuDrop.toggleClass('menu expanded');
         
         // toggle class vertical menu expanded on dropdown menu
-        menuDrop.toggleClass('vertical menu expanded')
+        menuDrop.toggleClass('vertical menu expanded');
 
         // change logo css display to none
         logo.css("display", "none");
@@ -36,7 +36,7 @@ enquire.register("screen and (max-width: 639px)", {
         menuDrop.toggleClass('menu expanded');
         
         // toggle class vertical menu expanded on dropdown menu
-        menuDrop.toggleClass('vertical menu expanded')
+        menuDrop.toggleClass('vertical menu expanded');
 
         // change logo css to display contents
         logo.css("display", "contents");
