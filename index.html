@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
 
 <!-- css -->
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
 <!-- font awesome -->
@@ -29,7 +29,7 @@
 </head>
 <body>
     <!-- hero section landing page -->
-    <section class="landing-hero">
+    <section class="landing-hero hide-for-small">
         <img src="static\images\logo\kushobi-logo.png" alt="Kushobi Vodoo Ninja In Training"><!-- background -->
     </section>
 
@@ -43,7 +43,7 @@
         <div class="top-bar">
             <div class="top-bar-left" id="logo">
                 <ul class="menu">
-                    <li><a href="#" class="logo"><img src="\static\images\logo\kushobi-logo.png" alt="Kushobi Logo" class="hide-for-small"></a></li>
+                    <li><a href="#" class="logo"><img src="static\images\logo\kushobi-logo.png" alt="Kushobi Logo" class="hide-for-small"></a></li>
                 </ul>
             </div>
             <div class="top-bar-right">
@@ -87,7 +87,7 @@
     <div class="about"><!-- background image, in landing folder -->
         <div class="overlay"></div><!-- overlay -->
         <div class="grid-container fluid clearfix">            
-            <img src="/static/images/headshot/headshot-circle.png" alt="Nelly" class="float-left headshot"> 
+            <img src="static/images/headshot/headshot-circle.png" alt="Nelly" class="float-left headshot"> 
 
             <h2 class="uppercase underline">about the <span class="highlighter">creator</span></h2>  
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat expedita et doloribus? Distinctio aut, fugiat quidem provident sequi pariatur sapiente alias? Ex rem earum vel dolore tenetur incidunt commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, neque corrupti saepe minima adipisci incidunt sapiente sit. Consequatur corporis voluptatem quae, sed expedita quia aut modi ducimus maxime. Hic, deserunt.</p>
@@ -105,19 +105,34 @@
                 <div class="cell large-4">
                     <div class="character">
                         <img src="static\images\characters\kushobi.png" alt="Kushobi" class="float-center">
-                        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Kushobi</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div> 
                 </div>
                 <div class="cell large-4">
                     <div class="character">
                         <img src="static\images\characters\ADA.png" alt="Ada" class="float-center">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, asperiores. Non eius minus obcaecati reprehenderit animi placeat aliquam saepe accusamus nihil quia, in aliquid pariatur officia perspiciatis mollitia quidem corrupti.</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Ada</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="cell large-4">
                     <div class="character">
                         <img src="static\images\characters\elders.png" alt="Elders" class="float-center">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti placeat sint suscipit rem itaque unde, facilis consequatur eaque aperiam minus tempore delectus eligendi? Quibusdam consequuntur, atque aut nesciunt cupiditate assumenda.</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Elder</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,33 +140,59 @@
                 <div class="cell large-4">
                     <div class="character">
                         <img src="static\images\characters\fatima.png" alt="Fatima" class="float-center">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempore officiis ad similique labore eos dolores consectetur. Incidunt perferendis, numquam dolore error et in aut necessitatibus excepturi consequatur sint tenetur.</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Fatima</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div> 
                 </div>
                 <div class="cell large-4">
                     <div class="character">
                         <img src="static\images\characters\guardian.png" alt="Guardian" class="float-center">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam odit accusantium tempore debitis quaerat unde id laboriosam? Voluptate sit a nobis, nesciunt, praesentium pariatur voluptatum minima cupiditate nulla natus quia.</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Guardian</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="cell large-4">
                     <div class="character">
                         <img src="static\images\characters\Khaba.png" alt="Khaba" class="float-center">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea officiis et vero accusamus voluptatibus dolorum ullam, amet eum. Voluptate veritatis magnam voluptatibus esse ipsam quidem earum blanditiis, maiores rerum cupiditate!</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Khaba</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="grid-x">
-                <div class="cell large-4 large-offset-2">
-                    <div class="character">
+                <div class="cell large-4 large-offset-1">
+                    <div class="character float-center">
                         <img src="static\images\characters\Klatchi.png" alt="Klatchi" class="float-center">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, assumenda! Sunt nesciunt exercitationem facilis nemo modi mollitia vero, id non et quam nulla molestiae alias quod quaerat distinctio! Quis, nesciunt!</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Klatchi</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div> 
                 </div>
-                <div class="cell large-4">
-                    <div class="oxie float-center">
+                
+                <div class="cell large-4 large-offset-1">
+                    <div class="oxie">
                         <img src="static\images\characters\Oxie.png" alt="Oxie">
-                        <!-- <p>lorem</p> -->
+                        <div class="hover-box">
+                            <div class="hover-box-text text-center">
+                                <h4 class="highlighter uppercase">Oxie</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam, quas minus dicta fugiat ut rem vel. At beatae, nulla magnam impedit quasi reprehenderit ab ex corporis repudiandae assumenda ducimus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,29 +201,27 @@
 
         <!-- donate section -->
         <section class="donate" >
-                    <div class="grid-container fluid clearfix image-container">
-                        <img src="static\images\landing\oxie-ful.png"  class="float-left"alt="Oxie">
-                    <div>
-                        <header>
-                            <h2 class="uppercase underline">become a <span class="highlighter">backer</span></h2> <!-- Capitalize -->
-                        </header>        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam officiis doloribus magni, excepturi recusandae corporis modi magnam amet debitis aut necessitatibus sunt numquam quia odit saepe repudiandae dolores totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores tempore repellendus corrupti quis quisquam. Temporibus, excepturi! Reiciendis, sunt, provident tenetur dicta animi delectus vitae maxime ab quis eaque, tempora placeat? </p>
-                        <a href="#" class="button large float-right">donate</a> <!-- donate -->
-                    </div>
+            <div class="grid-container fluid clearfix image-container">
+                    <img src="static\images\landing\oxie-ful.png"  class="float-left"alt="Oxie">
+                <div>
+                    <header>
+                        <h2 class="uppercase underline">become a <span class="highlighter">backer</span></h2> <!-- Capitalize -->
+                    </header>        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam officiis doloribus magni, excepturi recusandae corporis modi magnam amet debitis aut necessitatibus sunt numquam quia odit saepe repudiandae dolores totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores tempore repellendus corrupti quis quisquam. Temporibus, excepturi! Reiciendis, sunt, provident tenetur dicta animi delectus vitae maxime ab quis eaque, tempora placeat? </p>
+                    <a href="#" class="button large float-right">donate</a> <!-- donate -->
+                </div>
 
-                    </div>
-                </section>
-<!--                 
-        <div class="float-right">
-                <span><i class="fas fa-angle-up"></i></span> 
-        </div> --> <!-- up arrow -->
+            </div>
+        </section>
+                
+
 
 
     <!-- contact section -->
     <section class="contact">
         <div class="grid-container fluid">
-            <div class="grid-x"> <!-- upper bar (footer of the landing page) -->
-                <div class="cell">
+            <div class="grid-x align-center"> <!-- upper bar (footer of the landing page) -->
+                <div class="cell large-1">
                     <div class="icons">
                             <i class="fa fa-facebook-square" aria-hidden="true"></i>
                             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -230,6 +269,10 @@
             </div>
         </div>
     </section>
+<!-- appear after the hero section of the landing page -->
+    <div class="arrow">
+        <img src="static/images/landing/up-arrow.png" alt="arrow">
+    </div> <!-- up arrow -->
 
     <!-- javascript files -->
 
@@ -239,6 +282,6 @@
     <!-- enquire.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js"></script>
 
-    <script src="/static/js/script.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
 </html>

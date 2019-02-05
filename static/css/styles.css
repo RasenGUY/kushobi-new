@@ -165,7 +165,42 @@ a {
 .character {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    position: relative;
 }
+
+
+    .character .hover-box, .oxie .hover-box {
+        opacity: 0;
+        position: absolute;
+        top:0;
+        left: 14rem;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(165, 0, 33, 0.1); */
+        color: var(--base-color-dark);
+        -moz-transition: all 0.4s ease-in-out 0s;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -ms-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
+        .character:hover .hover-box, .character:active .hover-box, .oxie:hover .hover-box, .oxie:active .hoverbox {
+            opacity: 1;
+        } 
+        .character .hover-box-text, .oxie .hover-box-text{
+            text-align: center;
+            font-size: 18px;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    
     
     .character img {
         width: 10rem;
@@ -176,10 +211,16 @@ a {
         padding-top: 5rem;
         padding-bottom: 5rem;
         width: 17rem;
+        position: relative;
     }
         .oxie img {
             filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
         }
+
+        .oxie .hover-box {
+            width: 150%;
+        }
+
 
 /*-- donate page --*/
 
@@ -232,3 +273,11 @@ a {
         box-shadow: 10px 10px 10px rgba(165, 0, 33, 0.3);
     }
 
+/* arrow */
+.arrow {
+    width: 5rem;
+    position: fixed;
+    z-index: 100;
+    top: 50rem;
+    left: 105rem;
+}
