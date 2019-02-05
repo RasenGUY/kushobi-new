@@ -119,7 +119,7 @@ a {
     position: relative;
     max-height: 50rem;
     z-index: -5;
-    background-image: url('/static/images/landing/about-image.jpg');
+    background-image: url('static/images/landing/about-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -227,9 +227,9 @@ a {
 
     .donate .image-container img {
         width: 50%;
-        shape-outside: url('/static/images/landing/oxie-ful.png');
-        -webkit-shape-outside: url('/static/images/landing/oxie-ful.png');
-        -o-shape-outside: url('/static/images/landing/oxie-ful.png');
+        shape-outside: url('static/images/landing/oxie-ful.png');
+        -webkit-shape-outside: url('static/images/landing/oxie-ful.png');
+        -o-shape-outside: url('static/images/landing/oxie-ful.png');
         shape-margin: 2rem;
     }
 
