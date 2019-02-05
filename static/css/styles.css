@@ -27,7 +27,25 @@ h6 {
     font-family: "Delius", "Papyrus", "cursive";
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
 
+.underline {
+        border-bottom: solid 2px var(--highlight-color);
+        display: inline-block;
+        line-height: -0.25rem;
+    }
+p {
+    line-height: 1.75rem;
+}
+
+.highlighter {
+    color: var(--theme2-color);
+}
+    .highlighter:hover {
+        color: var(--highlight-color);
+    }
 /* foundation settings */
 
 .top-bar,
@@ -84,7 +102,8 @@ a {
 /* what is kushobi section */
 .mockup-container {
     position: absolute;
-    width: 180%;
+    left: 5rem;
+    width: 280%;
 }
 .mockup{
     width: 100%;
@@ -128,7 +147,6 @@ a {
         height: 20em;
         max-height: 15rem;
         max-width: 15rem;
-
         margin-right: 2rem;
         shape-outside: circle();
         -webkit-shape-outside: circle();
@@ -140,11 +158,6 @@ a {
 .characters-section header {
     text-align: center;
 }
-    .characters-section header h2 {
-        border-bottom: solid 2px var(--highlight-color);
-        display: inline-block;
-        line-height: -0.5rem;
-    }
 
 .character {
     padding-top: 5rem;
@@ -164,3 +177,51 @@ a {
         .oxie img {
             filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
         }
+
+/*-- donate page --*/
+
+
+    .donate .image-container img {
+        width: 50%;
+        shape-outside: url('/static/images/landing/oxie-ful.png');
+        -webkit-shape-outside: url('/static/images/landing/oxie-ful.png');
+        -o-shape-outside: url('/static/images/landing/oxie-ful.png');
+        shape-margin: 2rem;
+    }
+
+    .donate .image-container div {
+        height: 20rem;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+
+/* contact */
+.contact .icons {
+    width: 6rem;
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: 2rem; */
+}
+    .contact .icons > i {
+        font-size: 2.5rem;
+        color: var(--highlight-color);
+    }
+    .contact .icons > i:nth-child(1) {
+        margin-right: 0.5rem;
+    }
+
+    .contact .grid-x.grid-margin-x {
+        margin-top: 5rem;
+    }
+
+    .contact form.grid-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    input[type="text"], textarea {
+        box-shadow: 10px 10px 10px rgba(165, 0, 33, 0.3);
+    }
+
