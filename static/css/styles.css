@@ -204,6 +204,10 @@ a {
     margin-left: auto;
     /* margin-bottom: 2rem; */
 }
+
+.contact {
+    margin-bottom: 10rem;
+}
     .contact .icons > i {
         font-size: 2.5rem;
         color: var(--highlight-color);
