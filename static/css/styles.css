@@ -226,6 +226,7 @@ a {
 
 
     .donate .image-container img {
+        /* lol */
         width: 50%;
         shape-outside: url('static/images/landing/oxie-ful.png');
         -webkit-shape-outside: url('static/images/landing/oxie-ful.png');
