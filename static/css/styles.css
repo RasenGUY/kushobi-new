@@ -94,8 +94,12 @@ a {
     width: 70%;
 }
 
-.logo {
+.logo img {
     width: 10rem;
+}
+
+.logo {
+    padding: 0;
 }
 
 
