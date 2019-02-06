@@ -22,51 +22,181 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 <body>
+     <!-- hero section landing page -->
+     <section class="landing-hero hide-for-small">
+            <img src="static\images\logo\kushobi-logo.png" alt="Kushobi Vodoo Ninja In Training"><!-- background -->
+        </section>
+    
+        <!-- Navigation -->
+        <div class="title-bar" data-responsive-toggle="menu-main" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="menu-main"></button>
+            <div class="title-bar-title">Menu</div>
+        </div>
+    
+        <div class="dropdown menu align-center" id="menu-main">
+            <div class="top-bar">
+                <div class="top-bar-left" id="logo">
+                    <ul class="menu">
+                        <li><a href="#" class="logo"><img src="static\images\logo\kushobi-logo.png" alt="Kushobi Logo" class="hide-for-small"></a></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu expanded" data-dropdown-menu id="menu-drop">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CHARACTERS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                    </ul>
+                </div>        
+            </div >
+        </div>
+        <br>
     
     <!-- section for cards -->
-    <section> 
-        <div class="card">
-                <div class="card-section">
-                    <img src="https://via.placeholder.com/425x375">
-                </div>
-                <div class="card-section">
-                    <header>
-                        <h3>Lorem ipsum dolor</h3>
-                    </header>
-                    <div>
-                        <p>This is a simple card with an image inside a `.card-section`.</p>
+    <section class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell large-4 medium-4 small-4">
+                <div class="card">
+                    <div class="card-section">
+                        <img src="https://via.placeholder.com/425x375">
+                    </div>
+                    <div class="card-section">
+                        <header>
+                            <h3 class="highlighter uppercase">Lorem ipsum dolor</h3>
+                        </header>
+                        <div>
+                            <p>This is a simple card with an image inside a `.card-section`.</p>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="grid-x">
+                            <div class="cell large-6 medium-6 small-6">
+                                <span><p class="highlighter">tag tag tag</p></span>
+                            </div>
+                            <div class="cell large-6 medium-6 small-6">
+                                <span><p class="text-right highlighter">date</p></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="class-section">
-                    <div>
-                        <p>tag tag tag</p>
+            </div>
+
+            <div class="cell large-4 medium-4 small-4">
+                    <div class="card">
+                        <div class="card-section">
+                            <img src="https://via.placeholder.com/425x375">
+                        </div>
+                        <div class="card-section">
+                            <header>
+                                <h3 class="highlighter uppercase">Lorem ipsum dolor</h3>
+                            </header>
+                            <div>
+                                <p>This is a simple card with an image inside a `.card-section`.</p>
+                            </div>
+                        </div>
+                        <div class="card-section">
+                            <div class="grid-x">
+                                <div class="cell large-6 medium-6 small-6">
+                                    <span><p class="highlighter">tag tag tag</p></span>
+                                </div>
+                                <div class="cell large-6 medium-6 small-6">
+                                    <span><p class="text-right highlighter">date</p></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p>date</p>
+            </div>
+
+            <div class="cell large-4 medium-4 small-4">
+                    <div class="card">
+                        <div class="card-section">
+                            <img src="https://via.placeholder.com/425x375">
+                        </div>
+                        <div class="card-section">
+                            <header>
+                                <h3 class="highlighter uppercase">Lorem ipsum dolor</h3>
+                            </header>
+                            <div>
+                                <p>This is a simple card with an image inside a `.card-section`.</p>
+                            </div>
+                        </div>
+                        <div class="card-section">
+                            <div class="grid-x">
+                                <div class="cell large-6 medium-6 small-6">
+                                    <span><p class="highlighter">tag tag tag</p></span>
+                                </div>
+                                <div class="cell large-6 medium-6 small-6">
+                                    <span><p class="text-right highlighter">date</p></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-        </div>
+            </div>
+        </div>  
     </section>
 
     <!-- contact section -->
-    <section>
-            <header> <!-- upper bar (footer of the landing page) -->
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-            </header>
-            <div>
-                <h2>contact</h2><!-- capitalize -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas placeat sit fuga adipisci. Odit assumenda omnis itaque, non voluptate temporibus voluptatum architecto libero ullam culpa, numquam perspiciatis excepturi eaque fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat quam distinctio quasi iste, dolore omnis consectetur ea et accusantium, obcaecati nam repellendus unde cupiditate! Tenetur rem laudantium repellendus facere.</p>
+    <section class="contact">
+            <div class="grid-container fluid">
+                <div class="grid-x align-center"> <!-- upper bar (footer of the landing page) -->
+                    <div class="cell large-1">
+                        <div class="icons">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell large-6">
+                        <h2 class="uppercase underline">contact</h2><!-- capitalize -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas placeat sit fuga adipisci. Odit assumenda omnis itaque, non voluptate temporibus voluptatum architecto libero ullam culpa, numquam perspiciatis excepturi eaque fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat quam distinctio quasi iste, dolore omnis consectetur ea et accusantium, obcaecati nam repellendus unde cupiditate! Tenetur rem laudantium repellendus facere.</p>
+                    </div>
+                    <div class="cell large-6">
+                        <form class="grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="large-6 cell">
+                                    <label>
+                                        Name
+                                        <input type="text" placeholder="Name..." name="name">
+                                    </label>
+                                </div>
+                                <div class="large-6 cell">
+                                    <label>
+                                        Email
+                                        <input type="text" placeholder="Email..." name="email">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid-x">
+                                <div class="cell">
+                                    <label>
+                                        Subject
+                                        <input type="text" placeholder="Subject..." name="subject">
+                                    </label>
+                                </div>
+                                <div class="cell">
+                                    <label>
+                                        Shoot us a message
+                                        <textarea name="message" id="" cols="20" rows="5" placeholder="Write your message here..."></textarea>
+                                    </label>
+                                </div>
+                            </div>
+    
+                        </form>
+                    </div>
+                </div>
             </div>
-            <form action="">
-                <input type="text" placeholder="Name..." name="name">
-                <input type="text" placeholder="Email..." name="email">
-                <input type="text" placeholder="Subject..." name="subject">
-                <textarea name="message" id="" cols="40" rows="20"></textarea>
-            </form>   
-            
-    
-    </section>
-    
+        </section>
+
+
+    <!-- javascript files -->
+
+    <!-- foundation  -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js"integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw==" crossorigin="anonymous"></script>
+
+    <!-- enquire.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js"></script>
+
+    <script src="static/js/script.js"></script>
 </body>
 </html>
