@@ -134,7 +134,6 @@ a {
     position: relative;
     max-height: 50rem;
     z-index: -5;
-    background-image: url('/static/images/landing/about-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
