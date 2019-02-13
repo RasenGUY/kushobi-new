@@ -42,4 +42,24 @@ enquire.register("screen and (max-width: 639px)", {
         logo.css("display", "contents");
     }
 
+    // section wipes
+    // initiate controller
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+            triggerHook: 'onleave'
+        }
+    });
+
+    // select all sections
+    var sects = $('.panel');
+
+    // create a scene for each section
+    for (var i = 0; i < sects.length; i++ ){
+        new ScrollMagic.Scene ({
+            triggerElement: sects[i]
+        })
+        .setPin(sect[i])
+        .addIndicators
+        .addTo(controller);
+    }
 });
