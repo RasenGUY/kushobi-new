@@ -25,16 +25,13 @@
 <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    
 </head>
 <body>
-    <!-- hero section landing page -->
-    <section class="landing-hero hide-for-small">
-        <img src="static\images\logo\kushobi-logo.png" alt="Kushobi Vodoo Ninja In Training"><!-- background -->
-    </section>
+
 
     <!-- Navigation -->
-    <div class="title-bar" data-responsive-toggle="menu-main" data-hide-for="medium">
+    <!-- <div class="title-bar" data-responsive-toggle="menu-main" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="menu-main"></button>
         <div class="title-bar-title">Menu</div>
     </div>
@@ -56,9 +53,15 @@
             </div>        
         </div >
     </div>
-    <br>
+    <br> -->
+
+    <!-- hero section landing page -->
+    <section class="landing-hero hide-for-small">
+        <img src="static\images\logo\kushobi-logo.png" alt="Kushobi Vodoo Ninja In Training"><!-- background -->
+    </section>
+    
     <!-- section what is kushobi -->
-    <section class="grid-container fluid panel">  
+    <section class="grid-container fluid">  
         <div class="grid-x">
             <div class="cell">
                     <header><h2 class="uppercase underline">What is <span class="highlighter">Kushobi</span></h2></header><!-- capitalize -->
@@ -84,7 +87,7 @@
 
 
     <!-- About -->
-    <div class="about panel" style="background-image: url('static/images/landing/about-image.jpg')"><!-- background image, in landing folder -->
+    <div class="about" style="background-image: url('static/images/landing/about-image.jpg')"><!-- background image, in landing folder -->
         <div class="overlay"></div><!-- overlay -->
         <div class="grid-container fluid clearfix">            
             <img src="static/images/headshot/headshot-circle.png" alt="Nelly" class="float-left headshot"> 
@@ -97,7 +100,7 @@
     </div>
 
         <!-- characters  -->
-        <section class="grid-container fluid characters-section panel">
+        <section class="grid-container fluid characters-section">
             <br>
             <br>
             <header><h2 class="uppercase underline">characters</h2><!-- capitalize --></header>
@@ -199,7 +202,7 @@
 
 
         <!-- donate section -->
-        <section class="donate panel" >
+        <section class="donate" id="trigger">
             <div class="grid-x">
                 <div class="cell large-12 medium-12 small-12">
                     <div class="grid-container fluid clearfix image-container">
@@ -219,7 +222,7 @@
 
 
     <!-- contact section -->
-    <section class="contact panel">
+    <section class="contact" id="target">
         <div class="grid-container fluid">
             <div class="grid-x align-center"> <!-- upper bar (footer of the landing page) -->
                 <div class="cell large-1">
@@ -283,6 +286,8 @@
     <!-- scrollMagic -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.velocity.min.js"></script>
 
     <!-- enquire.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js"></script>

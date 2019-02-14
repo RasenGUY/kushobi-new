@@ -233,8 +233,9 @@ a {
 
 
 /*-- donate page --*/
-
-
+.donate {
+    margin-bottom: 3rem;
+}
     .donate .image-container img {
         width: 50%;
         shape-outside: url('/static/images/landing/oxie-ful.png');
@@ -258,7 +259,11 @@ a {
 }
 
 .contact {
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
+    position: fixed;
+    top: 40rem;
+    height: 100vh;
+    background-color: var(--base-color-light);
 }
     .contact .icons > i {
         font-size: 2.5rem;

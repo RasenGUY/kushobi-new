@@ -1,65 +1,73 @@
-// initialize foundation
+
+    // initialize foundation
     $(document).foundation();
 
-// navigation 
-
-// select navigation
-var menuMain = $('#menu-main');
-var menuDrop = $('#menu-drop');
-var logo = $('#logo');
 
 
-// load enquire.js
-enquire.register("screen and (max-width: 639px)", {
-    
-    // convert menu into vertical dropdown on smaller screens
-    match: function () {
-        // toggle class align-center on main menu
-        menuMain.toggleClass("align-center");
+    // navigation 
+
+    // select navigation
+    var menuMain = $('#menu-main');
+    var menuDrop = $('#menu-drop');
+    var logo = $('#logo');
+
+
+    // load enquire.js
+    enquire.register("screen and (max-width: 639px)", {
         
-        // toggle class menu expanded on main menu
-        menuDrop.toggleClass('menu expanded');
-        
-        // toggle class vertical menu expanded on dropdown menu
-        menuDrop.toggleClass('vertical menu expanded');
+        // convert menu into vertical dropdown on smaller screens
+        match: function () {
+            // toggle class align-center on main menu
+            menuMain.toggleClass("align-center");
+            
+            // toggle class menu expanded on main menu
+            menuDrop.toggleClass('menu expanded');
+            
+            // toggle class vertical menu expanded on dropdown menu
+            menuDrop.toggleClass('vertical menu expanded');
 
-        // change logo css display to none
-        logo.css("display", "none");
+            // change logo css display to none
+            logo.css("display", "none");
 
-    },
+        },
 
-    unmatch: function () {
-        // toggle class align-center on main menu
-        menuMain.toggleClass("align-center");
-        
-        // toggle class menu expanded on main menu
-        menuDrop.toggleClass('menu expanded');
-        
-        // toggle class vertical menu expanded on dropdown menu
-        menuDrop.toggleClass('vertical menu expanded');
+        unmatch: function () {
+            // toggle class align-center on main menu
+            menuMain.toggleClass("align-center");
+            
+            // toggle class menu expanded on main menu
+            menuDrop.toggleClass('menu expanded');
+            
+            // toggle class vertical menu expanded on dropdown menu
+            menuDrop.toggleClass('vertical menu expanded');
 
-        // change logo css to display contents
-        logo.css("display", "contents");
-    }
-
-    // section wipes
-    // initiate controller
-    var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onleave'
+            // change logo css to display contents
+            logo.css("display", "contents");
         }
     });
 
-    // select all sections
-    var sects = $('.panel');
+    var scroll = () => {
+ 
+    // tweening
+        // initiate controller
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                addIndicators: 'true'
+            }
+        });
 
-    // create a scene for each section
-    for (var i = 0; i < sects.length; i++ ){
-        new ScrollMagic.Scene ({
-            triggerElement: sects[i]
+        // tween
+        var tween = TweenMax.to("#target", 1, {y:-722.4, ease: SVGPathSegLinetoVerticalRel.easeNone});
+
+        // create the scene
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '#trigger',
+            duration: 722.4
         })
-        .setPin(sect[i])
-        .addIndicators
+        .setTween(tween)
+        .setPin('#target')
         .addTo(controller);
-    }
-});
+    };
+
+    // initialize scrollMagic pinsscrolling
+    // scroll()
