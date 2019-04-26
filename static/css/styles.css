@@ -274,7 +274,7 @@ a {
     left: 0;
     right: 0;
     height: 100%;
-    background-color: var(--base-color-dark);
+    background-color: var(--base-color-light);
 }
     .contact .icons > i {
         font-size: 2.5rem;
