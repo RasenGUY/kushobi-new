@@ -1,8 +1,10 @@
+// wait for document to load
 
     // initialize foundation
     $(document).foundation();
 
-
+    // initiate scrollmagic function
+    scroll();
 
     // navigation 
 
@@ -11,7 +13,7 @@
     var menuDrop = $('#menu-drop');
     var logo = $('#logo');
 
-
+// general rule make all buttons including hero small on small device md on med device, on large make all buttons except hero button md (hero is large) 
     // load enquire.js
     enquire.register("screen and (max-width: 639px)", {
         
@@ -46,28 +48,23 @@
         }
     });
 
-    var scroll = () => {
- 
+    // Tween hero yoyo
+    var heroTween = TweenMax.to('#landing-hero', 3, {opacity: 1, ease:Power0.easeNone, repeat:1, yoyo: true, yoyoEase:true, onComplete: function () {this.restart()}})
+    // .contact scrollMagic
+    function scroll () {
+   
     // tweening
         // initiate controller
-        var controller = new ScrollMagic.Controller({
-            globalSceneOptions: {
-                addIndicators: 'true'
-            }
-        });
+        var controller = new ScrollMagic.Controller();
 
-        // tween
-        var tween = TweenMax.to("#target", 1, {y:-722.4, ease: SVGPathSegLinetoVerticalRel.easeNone});
+        var tween = TweenMax.to("#target", 2, {y: '-92%'});
 
-        // create the scene
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger',
-            duration: 722.4
+            duration: 150,
+            // offset: 15,
+            triggerHook: 1
         })
+        .addTo(controller)
         .setTween(tween)
-        .setPin('#target')
-        .addTo(controller);
     };
-
-    // initialize scrollMagic pinsscrolling
-    // scroll()

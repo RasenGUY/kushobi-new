@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <style>
-section {
-  width:95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-section img {
-  width: 50rem;
-  float: right;
-  shape-outside: polygon(63.5% 21.85%, 67.4% -0.2%, 77% 13.35%, 87.5% 16.8%, 94.65% 44.95%, 95.25% 88.45%, 37.15% 95.75%, 3.75% 75.1%, 2.25% 65.2%, 47.5% 44.35%, 45.5% 16.4%);
-  -webkit-shape-outside: polygon(63.5% 21.85%, 67.4% -0.2%, 77% 13.35%, 87.5% 16.8%, 94.65% 44.95%, 95.25% 88.45%, 37.15% 95.75%, 3.75% 75.1%, 2.25% 65.2%, 47.5% 44.35%, 45.5% 16.4%);
-}
+  * {
+    margin:0px; 
+    padding: 0px;
+  }
+  .one {
+    height: 900px;
+    background-color: aqua;
+    display: grid;
+    align-items:center;
+  }
+  .middle {
+    height: 900px;
+    background-color:burlywood;
+    display: grid;
+    align-items:center;
 
-section div {
-margin-right: -15rem;
-}
+  }
+  .two {
+    height: 900px;
+    background-color: beige;
+    position: fixed;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .box{
+    position: relative;
+    top: 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    margin: auto;
+    background-color:darkcyan;
+  }
+  
+  .spacer {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: dashed 1px dimgray;
+  }
+
+  .s0 {
+    height: 0;
+  }
+
 </style>
 <body>
-    <section>
-        <div>
-            <img src="https://www.warrenphotographic.co.uk/photography/bigs/14195-Cute-cat-and-kitten-white-background.jpg" alt="" >
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus illum tempore aliquid possimus ea maiores eligendi, id distinctio! Quas, aut vel. Culpa consectetur labore in voluptatum repudiandae cum officiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eveniet aperiam maxime, maiores, vel voluptatum quaerat accusamus temporibus, fuga omnis ullam eligendi. Eligendi nulla eaque, maiores earum voluptas sunt excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic iusto sit, animi quaerat commodi sequi accusamus beatae illum expedita quisquam cupiditate amet magnam. Odit assumenda eaque aliquid mollitia omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam numquam adipisci eius quisquam sed! Nulla harum omnis quis blanditiis? Inventore, possimus similique veniam optio perferendis perspiciatis. Modi, accusamus aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, iure laborum eum nisi commodi ipsa architecto esse itaque cumque quis dolorem perferendis iusto harum, placeat nam totam repudiandae alias minima? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis quis consequatur cumque minus fugiat cum similique excepturi sunt placeat aspernatur expedita, facere commodi officia deleniti praesentium dolores voluptas doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime repellat id magnam dicta rem optio ex soluta odit! Ducimus, expedita et iusto mollitia in delectus officia asperiores ratione nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam error earum. Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam. Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam. Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam. Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam.Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam. Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam. Aliquam sapiente autem ab perspiciatis vitae ipsum ea iusto? Sequi autem voluptatem, a libero necessitatibus error provident ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod et perferendis a ab assumenda adipisci consequuntur consectetur architecto voluptatem! Dolorum facilis nam itaque natus blanditiis perspiciatis, minus incidunt doloremque consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio beatae eos error ea unde, explicabo alias voluptates excepturi assumenda placeat quis libero ipsum, officiis, consectetur repellendus laborum amet rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sequi quas ad, nisi exercitationem dolorem, blanditiis nihil nobis incidunt nemo omnis recusandae architecto pariatur aliquam inventore est eveniet esse. Aperiam.</p>
-      </section>
+  <section class="one">
+      <div id="trigger" class="spacer s0"></div>
+      <div class="box one" id="boxOne">test</div>
+  </section>
+  <section class="middle">
+    <div class="box">test</div>
+
+  </section>
+  <section class="two"></section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+  <script src="static/js/test.js"></script>
 </body>
 </html>

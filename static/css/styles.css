@@ -1,3 +1,6 @@
+/* general settings */
+
+
 :root {
     --base-color-light: #fefbf0;
     --base-color-dark: #0c0c0c;
@@ -10,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    moz-box-sizing: bor
     font-family: 'Delius', "Papyrus", "cursive";
 }
 
@@ -102,6 +106,10 @@ a {
 /* landing - hero */
 .landing-hero {
     background-color: var(--theme-color);
+}
+
+#landing-hero {
+    opacity: 0;
 }
 
 /* navigation */
@@ -251,8 +259,8 @@ a {
 /* contact */
 .contact .icons {
     width: 6rem;
-    padding-top: 2rem; 
-    padding-bottom: 2rem;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
     /* margin-bottom: 2rem; */
@@ -261,9 +269,12 @@ a {
 .contact {
     /* margin-bottom: 10rem; */
     position: fixed;
-    top: 40rem;
-    height: 100vh;
-    background-color: var(--base-color-light);
+    top: 92%;
+    bottom 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--base-color-dark);
 }
     .contact .icons > i {
         font-size: 2.5rem;
@@ -296,3 +307,12 @@ a {
 }
 
 /* blog page */
+.spacer .0 {
+    position: absolute;
+    top: 7rem;
+}
+
+#trigger {
+    position: relative;
+    height: 10rem;
+}
