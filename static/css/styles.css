@@ -64,12 +64,8 @@ p {
     width: 100%;    
     box-shadow: 0px 5px 5px rgba(165, 0, 33, 0.1);
     z-index: 1000;
-    /* transform: translateY(130%) */
 }
 
-#menu-main {
-    transform: translateY(130%)
-}
 .title-bar {
     position: fixed;
     top: 0px;
@@ -273,8 +269,9 @@ a {
 .contact {
     box-shadow: 5px 0px 10px rgba(165, 0, 33, 0.2);
     position: fixed;
-    top: 90.5%;
-    bottom 0;
+    top: 100%;
+    /* opacity: 0; */
+    bottom: 0;
     left: 0;
     right: 0;
     height: 100%;

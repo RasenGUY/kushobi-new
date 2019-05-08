@@ -55,26 +55,35 @@
     
     // .contact scrollMagic
     function scrollMenu () {
+
         // initialize controller
         var ctrl = new ScrollMagic.Controller()
         
-        // animation 
+        // animation
+        var timeline = new TimelineMax(); 
         var tween = TweenMax.to('.menu-main', 0.25, {y:'130%'});
+        var tweenTwo = TweenMax.to('#target-2', 0.25, {top: '90.5%'});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-1',
-            offset: '-180',
+            // offset: '',
             triggerHook: 0
         })
+        .setTween([tween, tweenTwo])
         .addTo(ctrl)
-        .setTween(tween)
     }
+
     function scrollContact () {
-   
         // initiate controller
         var controller = new ScrollMagic.Controller();
-
+        //  add multiple tweens
+        var timeline = new TimelineMax();
         var tween = TweenMax.to("#target-2", 2, {y: '-91%'});
+        var tweenTwo = TweenMax.to('.menu-main', 0.25, {y:'-130%'});
+
+        // timeline
+        //         .add(tween)
+        //         .add(tweenTwo)
 
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-2',
@@ -82,6 +91,7 @@
             offset: 15,
             triggerHook: 1
         })
+        // .setTween(tween)
+        .setTween([tween, tweenTwo])
         .addTo(controller)
-        .setTween(tween)
     };
