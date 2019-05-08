@@ -60,11 +60,15 @@ p {
 
 .menu-main {
     position: fixed;
-    top: 0px;
+    top: -20%;
     width: 100%;    
-    box-shadow: 0px 10px 5px rgba(165, 0, 33, 0.3);
+    box-shadow: 0px 5px 5px rgba(165, 0, 33, 0.1);
     z-index: 1000;
+    /* transform: translateY(130%) */
+}
 
+#menu-main {
+    transform: translateY(130%)
 }
 .title-bar {
     position: fixed;
@@ -267,9 +271,9 @@ a {
 }
 
 .contact {
-    /* margin-bottom: 10rem; */
+    box-shadow: 5px 0px 10px rgba(165, 0, 33, 0.2);
     position: fixed;
-    top: 92%;
+    top: 90.5%;
     bottom 0;
     left: 0;
     right: 0;
@@ -297,6 +301,8 @@ a {
         box-shadow: 10px 10px 10px rgba(165, 0, 33, 0.3);
     }
 
+    
+
 /* arrow */
 .arrow {
     width: 5rem;
@@ -312,7 +318,7 @@ a {
     top: 7rem;
 }
 
-#trigger {
+#trigger-2 {
     position: relative;
     height: 10rem;
 }

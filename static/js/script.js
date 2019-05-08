@@ -4,7 +4,8 @@
     $(document).foundation();
 
     // initiate scrollmagic function
-    scroll();
+    scrollMenu();
+    scrollContact();
 
     // navigation 
 
@@ -49,20 +50,36 @@
     });
 
     // Tween hero yoyo
-    var heroTween = TweenMax.to('#landing-hero', 3, {opacity: 1, ease:Power0.easeNone, repeat:1, yoyo: true, yoyoEase:true, onComplete: function () {this.restart()}})
+    var heroTween = TweenMax.to('#landing-hero', 3, {opacity: 1, ease:Power0.easeNone, repeat:1, yoyo: true, yoyoEase:true, onComplete: function () {this.restart()}});
+    // var someTween = TweenMax.to('.menu-main', 1, {y:'130%'});
+    
     // .contact scrollMagic
-    function scroll () {
+    function scrollMenu () {
+        // initialize controller
+        var ctrl = new ScrollMagic.Controller()
+        
+        // animation 
+        var tween = TweenMax.to('.menu-main', 0.25, {y:'130%'});
+
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '#trigger-1',
+            offset: '-180',
+            triggerHook: 0
+        })
+        .addTo(ctrl)
+        .setTween(tween)
+    }
+    function scrollContact () {
    
-    // tweening
         // initiate controller
         var controller = new ScrollMagic.Controller();
 
-        var tween = TweenMax.to("#target", 2, {y: '-92%'});
+        var tween = TweenMax.to("#target-2", 2, {y: '-91%'});
 
         var scene = new ScrollMagic.Scene({
-            triggerElement: '#trigger',
+            triggerElement: '#trigger-2',
             duration: 150,
-            // offset: 15,
+            offset: 15,
             triggerHook: 1
         })
         .addTo(controller)
