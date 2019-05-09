@@ -315,7 +315,14 @@ a {
     top: 7rem;
 }
 
+/* for animations */
+
 #trigger-2 {
     position: relative;
     height: 10rem;
 }
+
+/* .animate-box {
+    opacity: 0; 
+    transform: translateY(40%);
+} */

@@ -14,6 +14,9 @@
     var menuDrop = $('#menu-drop');
     var logo = $('#logo');
 
+    // select animation boxes
+    var animateBox = $('.animate-box');
+
 // general rule make all buttons including hero small on small device md on med device, on large make all buttons except hero button md (hero is large) 
     // load enquire.js
     enquire.register("screen and (max-width: 639px)", {
@@ -50,8 +53,7 @@
     });
 
     // Tween hero yoyo
-    var heroTween = TweenMax.to('#landing-hero', 3, {opacity: 1, ease:Power0.easeNone, repeat:1, yoyo: true, yoyoEase:true, onComplete: function () {this.restart()}});
-    // var someTween = TweenMax.to('.menu-main', 1, {y:'130%'});
+    var heroTween = TweenMax.to('#landing-hero', 5, {opacity: 1, ease:Power0.easeNone, repeat:1, yoyo: true, yoyoEase:true, onComplete: function () {this.restart()}});
     
     // .contact scrollMagic
     function scrollMenu () {
@@ -60,7 +62,6 @@
         var ctrl = new ScrollMagic.Controller()
         
         // animation
-        var timeline = new TimelineMax(); 
         var tween = TweenMax.to('.menu-main', 0.25, {y:'130%'});
         var tweenTwo = TweenMax.to('#target-2', 0.25, {top: '90.5%'});
 
@@ -81,10 +82,6 @@
         var tween = TweenMax.to("#target-2", 2, {y: '-91%'});
         var tweenTwo = TweenMax.to('.menu-main', 0.25, {y:'-130%'});
 
-        // timeline
-        //         .add(tween)
-        //         .add(tweenTwo)
-
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-2',
             duration: 150,
@@ -95,3 +92,29 @@
         .setTween([tween, tweenTwo])
         .addTo(controller)
     };
+
+    // function for animations
+    function animateEl () {
+        // create scrollMagic controller
+        var ctrl = new ScrollMagic.Controller();
+        // iterate over each box
+        $.each(animateBox, (index, box ) => {
+
+            // create a tween
+            var animation = TweenMax.fromTo(box, 1,{opacity: 0, y: '40%'}, {opacity:1, y: '0%' });
+            
+            // for each element create a scrollmagic scene
+            var scene = new ScrollMagic.Scene({triggerElement: box, offset: -200})
+            .setTween(animation)
+            .addTo(ctrl)
+            .on("enter", ()=>{
+                setInterval(()=>{
+                    animation.play()
+                }, 1500);
+            })
+            .on("leave", ()=>{
+                scene.removeTween();
+            })
+        })
+    }
+    animateEl();
