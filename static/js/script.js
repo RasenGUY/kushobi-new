@@ -161,7 +161,7 @@
         // select targets
         var targets = $('.target-3');
         // initiate scrollMagic
-        var ctrl = new ScrollMagic.Controller({addIndicators: 'true'});
+        var ctrl = new ScrollMagic.Controller();
         
         $.each(targets, (index, target) => {
 
