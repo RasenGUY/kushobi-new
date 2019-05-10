@@ -7,6 +7,7 @@
     scrollMenu();
     scrollContact();
     animateChar();
+    animateMockup();
     
 
 
@@ -19,6 +20,7 @@
 
     // select animation boxes
     var animateBox = $('.animate-box');
+    var mockUp = $('.mockUp');
 
 // general rule make all buttons including hero small on small device md on med device, on large make all buttons except hero button md (hero is large) 
     // load enquire.js
@@ -129,7 +131,7 @@
         var char = $('.character img');
 
         // initialize new controller
-        var ctrl = new ScrollMagic.Controller({addIndicators: 'true'});
+        var ctrl = new ScrollMagic.Controller();
 
         // create timeline with tweens
         var tl = new TimelineMax();
@@ -137,10 +139,10 @@
         
         for (let i = 0; i<char.length; i++){
             if ((i <= 2 )|| (i > 5 && i <= 7 ) ){
-                tl.add(TweenMax.fromTo(char[i], 0.35, {opacity: 0, x: '-100%'}, {opacity: 1, x: '0%'}))
+                tl.add(TweenMax.fromTo(char[i], 0.35, {opacity: 0, x: '-100%'}, {opacity: 1, x: '0%', ease: Circ.easeOut}))
                 // console.log("from left added tween")
             } else {
-                tl.add(TweenMax.fromTo(char[i], 0.35, {opacity: 0, x: '100%'}, {opacity: 1, x: '0%'}))
+                tl.add(TweenMax.fromTo(char[i], 0.35, {opacity: 0, x: '100%'}, {opacity: 1, x: '0%', ease: Circ.easeOut}))
                 // console.log('from right added tween')
             } 
         }
@@ -152,5 +154,23 @@
         .on('leave', ()=>{
             scene.removeTween();
         })
-    }
+    };
+
+    // function for animation of mockup
+    function animateMockup(){
+        // initiate scrollMagic
+        var ctrl = new ScrollMagic.Controller();
+        
+        // create tween
+        var tween = TweenMax.fromTo('.mockup', 1,{opacity: 0, x: '100%'}, {opacity:1, x: '0%', ease: Circ.easeOut});
+        
+        // initiate scene
+        var scene = new ScrollMagic.Scene({triggerElement: '.mockup-container', offset: -100})
+        .setTween(tween)
+        .addTo(ctrl)
+        .on('leave', ()=>{
+            scene.removeTween();
+        });
+    };
+
 
