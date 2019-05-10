@@ -158,18 +158,25 @@
 
     // function for animation of mockup
     function animateMockup(){
+        // select targets
+        var targets = $('.target-3');
         // initiate scrollMagic
-        var ctrl = new ScrollMagic.Controller();
+        var ctrl = new ScrollMagic.Controller({addIndicators: 'true'});
         
-        // create tween
-        var tween = TweenMax.fromTo('.mockup', 1,{opacity: 0, x: '100%'}, {opacity:1, x: '0%', ease: Circ.easeOut});
-        
-        // initiate scene
-        var scene = new ScrollMagic.Scene({triggerElement: '.mockup-container', offset: -100})
-        .setTween(tween)
-        .addTo(ctrl)
-        .on('leave', ()=>{
-            scene.removeTween();
+        $.each(targets, (index, target) => {
+
+            // create tween
+            var tween = TweenMax.fromTo(target, 1,{opacity: 0, x: '100%'}, {opacity:1, x: '0%', ease: Circ.easeOut});        
+            // initiate scene
+            var scene = new ScrollMagic.Scene({triggerElement: target, offset: -100})
+            .setTween(tween)
+            .addTo(ctrl)
+            .on('enter', ()=>{
+                tween.play()
+            })
+            .on('leave', ()=>{
+                scene.removeTween();
+            });
         });
     };
 
