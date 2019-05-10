@@ -6,7 +6,9 @@
     // initiate scrollmagic function
     scrollMenu();
     scrollContact();
-    animateEl();
+    animateChar();
+    
+
 
     // navigation 
 
@@ -118,6 +120,8 @@
             })
         })
     }
+    animateEl();
+
 
     // function for animation of characters
     function animateChar(){
@@ -133,11 +137,11 @@
         
         for (let i = 0; i<char.length; i++){
             if ((i <= 2 )|| (i > 5 && i <= 7 ) ){
-                tl.add(TweenMax.fromTo(char[i], 0.75, {opacity: 0, x: '-100%'}, {opacity: 1, x: '0%'}))
-                console.log("from left added tween")
+                tl.add(TweenMax.fromTo(char[i], 0.35, {opacity: 0, x: '-100%'}, {opacity: 1, x: '0%'}))
+                // console.log("from left added tween")
             } else {
-                tl.add(TweenMax.fromTo(char[i], 0.75, {opacity: 0, x: '100%'}, {opacity: 1, x: '0%'}))
-                console.log('from right added tween')
+                tl.add(TweenMax.fromTo(char[i], 0.35, {opacity: 0, x: '100%'}, {opacity: 1, x: '0%'}))
+                // console.log('from right added tween')
             } 
         }
 
@@ -145,7 +149,8 @@
         var scene = new ScrollMagic.Scene({triggerElement: '#characters-section'})
         .setTween(tl)
         .addTo(ctrl)
-        
+        .on('leave', ()=>{
+            scene.removeTween();
+        })
     }
-    animateChar();
 
