@@ -6,6 +6,7 @@
     // initiate scrollmagic function
     scrollMenu();
     scrollContact();
+    animateEl();
 
     // navigation 
 
@@ -93,7 +94,7 @@
         .addTo(controller)
     };
 
-    // function for animations
+    // function for general animations
     function animateEl () {
         // create scrollMagic controller
         var ctrl = new ScrollMagic.Controller();
@@ -101,7 +102,7 @@
         $.each(animateBox, (index, box ) => {
 
             // create a tween
-            var animation = TweenMax.fromTo(box, 1,{opacity: 0, y: '40%'}, {opacity:1, y: '0%' });
+            var animation = TweenMax.fromTo(box, 1,{opacity: 0, y: '40%'}, {opacity:1, y: '0%', ease: Circ.easeOut});
             
             // for each element create a scrollmagic scene
             var scene = new ScrollMagic.Scene({triggerElement: box, offset: -200})
@@ -117,4 +118,34 @@
             })
         })
     }
-    animateEl();
+
+    // function for animation of characters
+    function animateChar(){
+        // select all characters
+        var char = $('.character img');
+
+        // initialize new controller
+        var ctrl = new ScrollMagic.Controller({addIndicators: 'true'});
+
+        // create timeline with tweens
+        var tl = new TimelineMax();
+        // iterate over characters and add the tween
+        
+        for (let i = 0; i<char.length; i++){
+            if ((i <= 2 )|| (i > 5 && i <= 7 ) ){
+                tl.add(TweenMax.fromTo(char[i], 0.75, {opacity: 0, x: '-100%'}, {opacity: 1, x: '0%'}))
+                console.log("from left added tween")
+            } else {
+                tl.add(TweenMax.fromTo(char[i], 0.75, {opacity: 0, x: '100%'}, {opacity: 1, x: '0%'}))
+                console.log('from right added tween')
+            } 
+        }
+
+        // create new scrollMagic scene
+        var scene = new ScrollMagic.Scene({triggerElement: '#characters-section'})
+        .setTween(tl)
+        .addTo(ctrl)
+        
+    }
+    animateChar();
+

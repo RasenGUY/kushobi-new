@@ -57,7 +57,6 @@ p {
 .menu {
     background-color: var(--base-color-light);
 }
-
 .menu-main {
     position: fixed;
     top: -20%;
@@ -65,7 +64,6 @@ p {
     box-shadow: 0px 5px 5px rgba(165, 0, 33, 0.1);
     z-index: 1000;
 }
-
 .title-bar {
     position: fixed;
     top: 0px;
@@ -127,6 +125,7 @@ a {
 
 
 /* what is kushobi section */
+
 .mockup-container {
     position: absolute;
     left: 5rem;
@@ -224,17 +223,17 @@ a {
     
     
     .character img {
-        width: 10rem;
+        max-width: 10rem;
         position: relative;
         z-index: -5;
         filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
+
     }
 
-        .oxie img {
-            width: 17rem;
+        .character.oxie img {
+            max-width: 17rem;
             filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
             position: relative; 
-
             z-index:-5;
         }
 
@@ -321,8 +320,3 @@ a {
     position: relative;
     height: 10rem;
 }
-
-/* .animate-box {
-    opacity: 0; 
-    transform: translateY(40%);
-} */
