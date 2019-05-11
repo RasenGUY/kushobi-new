@@ -164,19 +164,42 @@
         var ctrl = new ScrollMagic.Controller();
         
         $.each(targets, (index, target) => {
+            // variable for changing x value
+            var x = '';
+            
+            if (index === 0){
+                // intiate scene
+                x = '100%';
+                // create tween
+                var tween = TweenMax.fromTo(target, 1,{opacity: 0, x: x}, {opacity:1, x: '0%', ease: Circ.easeOut});
 
-            // create tween
-            var tween = TweenMax.fromTo(target, 1,{opacity: 0, x: '100%'}, {opacity:1, x: '0%', ease: Circ.easeOut});        
-            // initiate scene
-            var scene = new ScrollMagic.Scene({triggerElement: target, offset: -100})
-            .setTween(tween)
-            .addTo(ctrl)
-            .on('enter', ()=>{
-                tween.play()
-            })
-            .on('leave', ()=>{
-                scene.removeTween();
-            });
+                // initiate scene
+                var scene = new ScrollMagic.Scene({triggerElement: target, offset: -100})
+                .setTween(tween)
+                .addTo(ctrl)
+                .on('enter', ()=>{
+                    tween.play();
+                })
+                .on('leave', ()=>{
+                    scene.removeTween();
+                });
+            } else {
+                x = '-100%';
+
+                // create tween
+                var tween = TweenMax.fromTo(target, 1,{opacity: 0, x: x}, {opacity:1, x: '0%', ease: Circ.easeOut});
+
+                // intiate scene
+                var scene = new ScrollMagic.Scene({triggerElement: target, offset: -100})
+                .setTween(tween).
+                addTo(ctrl)
+                .on('enter', ()=>{
+                    tween.play()
+                })
+                .on('leave', ()=>{
+                    scene.removeTween();
+                });                     
+            }
         });
     };
 
