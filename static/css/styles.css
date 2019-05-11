@@ -250,6 +250,7 @@ a {
         width: 50%;
         shape-outside: url('/static/images/landing/oxie-ful.png');
         -webkit-shape-outside: url('/static/images/landing/oxie-ful.png');
+        -moz-shape-outside: url('/static/images/landing/oxie-ful.png');
         -o-shape-outside: url('/static/images/landing/oxie-ful.png');
         shape-margin: 2rem;
     }
