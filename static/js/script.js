@@ -67,8 +67,8 @@
         var ctrl = new ScrollMagic.Controller()
         
         // animation
-        var tween = TweenMax.to('.menu-main', 0.25, {y:'130%'});
-        var tweenTwo = TweenMax.to('#target-2', 0.25, {top: '90.5%'});
+        var tween = TweenMax.to('.menu-main', 0.25, {y:'0%'});
+        var tweenTwo = TweenMax.to('#target-2', 0.25, {y: '-7%'});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-1',
@@ -84,8 +84,8 @@
         var controller = new ScrollMagic.Controller();
         //  add multiple tweens
         var timeline = new TimelineMax();
-        var tween = TweenMax.to("#target-2", 2, {y: '-91%'});
-        var tweenTwo = TweenMax.to('.menu-main', 0.25, {y:'-130%'});
+        var tween = TweenMax.to("#target-2", 2, {top: '6.5%'});
+        var tweenTwo = TweenMax.to('.menu-main', 0.25, {y:'-105%'});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-2',
