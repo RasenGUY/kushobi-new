@@ -13,7 +13,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    moz-box-sizing: bor
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
     font-family: 'Delius', "Papyrus", "cursive";
 }
 
@@ -65,7 +67,7 @@ p {
     z-index: 1000;
     -moz-transform: translateY(-105%);
     -webkit-transform: translateY(-105%);
-    -ms-transform: translateY(-105%);
+    -o-transform: translateY(-105%);
     transform: translateY(-105%);
 }
 .title-bar {
@@ -317,10 +319,10 @@ a {
 }
 
 /* blog page */
-.spacer .0 {
+/* .spacer .0 {
     position: absolute;
     top: 7rem;
-}
+} */
 
 /* for animations */
 
