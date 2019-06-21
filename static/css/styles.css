@@ -131,7 +131,9 @@ a {
 
 
 /* what is kushobi section */
-
+.spacer {
+    height: 2rem;
+}
 .mockup-container {
     position: absolute;
     left: 5rem;
@@ -250,10 +252,10 @@ a {
 }
     .donate .image-container img {
         width: 50%;
-        shape-outside: url('/static/images/landing/oxie-ful.png');
-        -webkit-shape-outside: url('/static/images/landing/oxie-ful.png');
-        -moz-shape-outside: url('/static/images/landing/oxie-ful.png');
-        -o-shape-outside: url('/static/images/landing/oxie-ful.png');
+        shape-outside: url('https://lh3.googleusercontent.com/Xk_Vqt0tosBKfp8eC7K54LCeNNjHX-hBeSIruoqkakax7gP9ZMInEwsUdlhCqYbSMc-S_10h-EatOdp1Hk2OIdbtSKEBhs-FOlNrRG0KlS4KoKA61N6XLUkSzt1UNBFIIYNKt14DXPdIAR7QY6jWI5kOIeqa0idagiqomzTlFkX9Cznv0ylrI8D7VsR8i5d1UW5D37vWz3_pLOsl2LXBxS8fV595VXwJElTBRvam3DSeDFh2z0b-NSRTf7OAg8HnXYIfNB7lsi9Ca7rp42AkhjqJbYQECBwzsKTuZbNLZkPOhoC88DgarYSfCwXc1p1U9sIf8me9r0ikOrH1d0SwuQVpONM-QS6g1ibNp58w7vg9r4ZO71qtU9gblLPwMXQSa7hD-i8SlU0G-knsCEZLDrm74yHwmO8ttWmWH9AS53q155HwFkWPhg5aVWoQJk9UssOVuxEuPHc7TwWd9l9PyUWOnu2kNyC0tYWQ0YxCEili9-iDYlJ_REWsTS46VsSPsi9wDTGnMKwL8g7yzEjuf_H70oXeCi92GexwtaMsFygE7jHJcfBJ8cg955poRupQ1iXqGb266Z8Gzeqg5RHTyCqPRVtTxGFkHw1EfAIkDHAblK2v9K9dVVtCpzJq-ATog8nuU9uiQVozgEaLDM9yEIMWnqLDGN8=w372-h396-no');
+        -webkit-shape-outside: url('https://lh3.googleusercontent.com/Xk_Vqt0tosBKfp8eC7K54LCeNNjHX-hBeSIruoqkakax7gP9ZMInEwsUdlhCqYbSMc-S_10h-EatOdp1Hk2OIdbtSKEBhs-FOlNrRG0KlS4KoKA61N6XLUkSzt1UNBFIIYNKt14DXPdIAR7QY6jWI5kOIeqa0idagiqomzTlFkX9Cznv0ylrI8D7VsR8i5d1UW5D37vWz3_pLOsl2LXBxS8fV595VXwJElTBRvam3DSeDFh2z0b-NSRTf7OAg8HnXYIfNB7lsi9Ca7rp42AkhjqJbYQECBwzsKTuZbNLZkPOhoC88DgarYSfCwXc1p1U9sIf8me9r0ikOrH1d0SwuQVpONM-QS6g1ibNp58w7vg9r4ZO71qtU9gblLPwMXQSa7hD-i8SlU0G-knsCEZLDrm74yHwmO8ttWmWH9AS53q155HwFkWPhg5aVWoQJk9UssOVuxEuPHc7TwWd9l9PyUWOnu2kNyC0tYWQ0YxCEili9-iDYlJ_REWsTS46VsSPsi9wDTGnMKwL8g7yzEjuf_H70oXeCi92GexwtaMsFygE7jHJcfBJ8cg955poRupQ1iXqGb266Z8Gzeqg5RHTyCqPRVtTxGFkHw1EfAIkDHAblK2v9K9dVVtCpzJq-ATog8nuU9uiQVozgEaLDM9yEIMWnqLDGN8=w372-h396-no');
+        -moz-shape-outside: url('https://lh3.googleusercontent.com/Xk_Vqt0tosBKfp8eC7K54LCeNNjHX-hBeSIruoqkakax7gP9ZMInEwsUdlhCqYbSMc-S_10h-EatOdp1Hk2OIdbtSKEBhs-FOlNrRG0KlS4KoKA61N6XLUkSzt1UNBFIIYNKt14DXPdIAR7QY6jWI5kOIeqa0idagiqomzTlFkX9Cznv0ylrI8D7VsR8i5d1UW5D37vWz3_pLOsl2LXBxS8fV595VXwJElTBRvam3DSeDFh2z0b-NSRTf7OAg8HnXYIfNB7lsi9Ca7rp42AkhjqJbYQECBwzsKTuZbNLZkPOhoC88DgarYSfCwXc1p1U9sIf8me9r0ikOrH1d0SwuQVpONM-QS6g1ibNp58w7vg9r4ZO71qtU9gblLPwMXQSa7hD-i8SlU0G-knsCEZLDrm74yHwmO8ttWmWH9AS53q155HwFkWPhg5aVWoQJk9UssOVuxEuPHc7TwWd9l9PyUWOnu2kNyC0tYWQ0YxCEili9-iDYlJ_REWsTS46VsSPsi9wDTGnMKwL8g7yzEjuf_H70oXeCi92GexwtaMsFygE7jHJcfBJ8cg955poRupQ1iXqGb266Z8Gzeqg5RHTyCqPRVtTxGFkHw1EfAIkDHAblK2v9K9dVVtCpzJq-ATog8nuU9uiQVozgEaLDM9yEIMWnqLDGN8=w372-h396-no');
+        -o-shape-outside: url('https://lh3.googleusercontent.com/Xk_Vqt0tosBKfp8eC7K54LCeNNjHX-hBeSIruoqkakax7gP9ZMInEwsUdlhCqYbSMc-S_10h-EatOdp1Hk2OIdbtSKEBhs-FOlNrRG0KlS4KoKA61N6XLUkSzt1UNBFIIYNKt14DXPdIAR7QY6jWI5kOIeqa0idagiqomzTlFkX9Cznv0ylrI8D7VsR8i5d1UW5D37vWz3_pLOsl2LXBxS8fV595VXwJElTBRvam3DSeDFh2z0b-NSRTf7OAg8HnXYIfNB7lsi9Ca7rp42AkhjqJbYQECBwzsKTuZbNLZkPOhoC88DgarYSfCwXc1p1U9sIf8me9r0ikOrH1d0SwuQVpONM-QS6g1ibNp58w7vg9r4ZO71qtU9gblLPwMXQSa7hD-i8SlU0G-knsCEZLDrm74yHwmO8ttWmWH9AS53q155HwFkWPhg5aVWoQJk9UssOVuxEuPHc7TwWd9l9PyUWOnu2kNyC0tYWQ0YxCEili9-iDYlJ_REWsTS46VsSPsi9wDTGnMKwL8g7yzEjuf_H70oXeCi92GexwtaMsFygE7jHJcfBJ8cg955poRupQ1iXqGb266Z8Gzeqg5RHTyCqPRVtTxGFkHw1EfAIkDHAblK2v9K9dVVtCpzJq-ATog8nuU9uiQVozgEaLDM9yEIMWnqLDGN8=w372-h396-no');
         shape-margin: 2rem;
     }
 
@@ -275,7 +277,6 @@ a {
     box-shadow: 5px 0px 10px rgba(165, 0, 33, 0.2);
     position: fixed;
     top: 100%;
-    /* opacity: 0; */
     bottom: 0;
     left: 0;
     right: 0;
@@ -286,16 +287,13 @@ a {
     -ms-transform: translateY(100%);
     transform: translateY(100%); */
 }
-    .contact .icons > i {
+    .contact .icons > a i {
+        margin-right: 0.25rem;
         font-size: 1.75rem;
         color: var(--highlight-color);
     }
     .contact .icons > i:nth-child(1) {
         margin-right: 0.5rem;
-    }
-
-    .contact .grid-x.grid-margin-x {
-        margin-top: 5rem;
     }
 
     .contact form.grid-container {
@@ -306,6 +304,15 @@ a {
     input[type="text"], textarea {
         box-shadow: 10px 10px 10px rgba(165, 0, 33, 0.3);
     }
+
+    .contact-img {
+        position: relative;
+        width: 17rem;
+        left: 10rem;
+    }
+    .contact-img img {
+        width: 100%;
+        }
 
     
 

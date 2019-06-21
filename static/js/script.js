@@ -72,7 +72,7 @@
 
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-1',
-            // offset: '',
+            offset: -500,
             triggerHook: 0
         })
         .setTween([tween, tweenTwo])
@@ -167,7 +167,8 @@
             // variable for changing x value
             var x = '';
             
-            if (index === 0){
+            if (index === 0 || index === 2){
+                
                 // intiate scene
                 x = '100%';
                 // create tween
@@ -191,8 +192,8 @@
 
                 // intiate scene
                 var scene = new ScrollMagic.Scene({triggerElement: target, offset: -100})
-                .setTween(tween).
-                addTo(ctrl)
+                .setTween(tween)
+                .addTo(ctrl)
                 .on('enter', ()=>{
                     tween.play()
                 })
