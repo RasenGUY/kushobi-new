@@ -25,11 +25,8 @@
 <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
 </head>
 <body>
-
-
     <!-- Navigation -->
     <div class="title-bar" data-responsive-toggle="menu-main" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="menu-main"></button>
@@ -40,20 +37,21 @@
         <div class="top-bar">
             <div class="top-bar-left" id="logo">
                 <ul class="menu">
-                    <li><a href="#" class="logo"><img src="static\images\logo\kushobi-logo.png" alt="Kushobi Logo" class="hide-for-small"></a></li>
+                    <li><a href="index.html" class="logo"><img src="static\images\logo\kushobi-logo.png" alt="Kushobi Logo" class="hide-for-small"></a></li>
                 </ul>
             </div>
             <div class="top-bar-right">
                 <ul class="menu expanded" data-dropdown-menu id="menu-drop">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Characters</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>        
         </div >
     </div>
-    <!-- <br> -->
 
     <!-- hero section landing page -->
     <section class="landing-hero hide-for-small">
@@ -63,7 +61,7 @@
     <!-- section what is kushobi -->
     <section class="grid-container fluid" id="trigger-1">
         <div class="spacer"></div>
-        <div class="grid-x">
+        <div class="grid-x" id="home">
             <div class="cell">
                 <header><h2 class="uppercase underline animate-box">What is <span class="highlighter">Kushobi</span></h2></header><!-- capitalize -->
                 <p class="animate-box">From the Author Nelly Blaise Half Haitian and the Dominican Republic, born in  St. Maarten. 
@@ -73,7 +71,7 @@
                     <div class="cell large-7 medium-7 small-7">
                         <!-- help wanted -->
                         <header><h2 class="uppercase underline animate-box">Help <span class="highlighter">wanted</span></h2></header><!-- capitalize -->
-                        <p class="animate-box">Help us realizes project by donating to our <span class="highlighter"><a href="#">Indiegogo</a></span> campaign and bet he first to receive updates, goodies and much more</p>
+                        <p class="animate-box">Help us realizes project by donating to our <span class="highlighter"><a href="https://pt.gofundme.com/kushobi-graphic-novel?fbclid=IwAR3GUX70gkEZxGjUeTNd5v83E9_gG78390I8e8eWYn3sRPx4C511qP1A8zs">Gofundme</a></span> campaign and bet he first to receive updates, goodies and much more</p>
                         <a href="https://pt.gofundme.com/kushobi-graphic-novel?fbclid=IwAR3GUX70gkEZxGjUeTNd5v83E9_gG78390I8e8eWYn3sRPx4C511qP1A8zs" target="_blank" class="button large animate-box">donate</a><!--capitalize (button)-->
                     </div>
 
@@ -89,7 +87,7 @@
 
 
     <!-- About -->
-    <div class="about" style="background-image: url('https://lh3.googleusercontent.com/puMp1LgsbAE38G0ABm_iKDI68WSe3myneoecg8ybe5lpMNBPAJZKVn9LfS8nWoteWsi2Wg9l-7AkfeYIts2vB7FDOWuw-01gxAWw1gNDQARnvxZ4JnVlMB-jadixIg4_Zv29ApeLg8lEPAuDOqfk3J6brg15lgkA73gHKY0YyqkXHGehnldu5R_O-1kMi5qDOzMlaR5CglMek73H5-Uk65MVZXTBEM-XwteGEqmAl0gsbGr6mKU2N4I_teeFLiC_SncvGx9gq8L-3kSmml4H2QDAz48ycCXWUPn7LQnCdI8uCOYhnjPmK5ubDDWDvl0Tb1JGHR_cQw4t7dSBZr7TQtBIAnXygRfGY_4L7sb8XT80KXACxBs9IJWBYlYm1pvINcuertJvJzKmxnKdnNsrfY1FUoWJTJSRky349u422kHyGR0ZYnucn1PA01aW9IGO1DMt7T8UtMCWVXVjxVUAUPPJiKs2zZdEL_JRg6_i_365EyutGvnAeTPAJVXa5jndhxlVlgV4kQ8y7IQ-Ka4OnzaPZ0hyHqwPugib2ZtGJXcctov4fkB1IXanbqmST52LltvEtqOF1KOj9Eb2uxD2iukap9q59Y_zfsEa8PSe0GmKk0MMkc0cf0v7m6fkpvfFRqhEPLavwWdhffzlT5MHquVbmIUj12M=w1189-h400-no')"><!-- background image, in landing folder -->
+    <div class="about" style="background-image: url('https://lh3.googleusercontent.com/puMp1LgsbAE38G0ABm_iKDI68WSe3myneoecg8ybe5lpMNBPAJZKVn9LfS8nWoteWsi2Wg9l-7AkfeYIts2vB7FDOWuw-01gxAWw1gNDQARnvxZ4JnVlMB-jadixIg4_Zv29ApeLg8lEPAuDOqfk3J6brg15lgkA73gHKY0YyqkXHGehnldu5R_O-1kMi5qDOzMlaR5CglMek73H5-Uk65MVZXTBEM-XwteGEqmAl0gsbGr6mKU2N4I_teeFLiC_SncvGx9gq8L-3kSmml4H2QDAz48ycCXWUPn7LQnCdI8uCOYhnjPmK5ubDDWDvl0Tb1JGHR_cQw4t7dSBZr7TQtBIAnXygRfGY_4L7sb8XT80KXACxBs9IJWBYlYm1pvINcuertJvJzKmxnKdnNsrfY1FUoWJTJSRky349u422kHyGR0ZYnucn1PA01aW9IGO1DMt7T8UtMCWVXVjxVUAUPPJiKs2zZdEL_JRg6_i_365EyutGvnAeTPAJVXa5jndhxlVlgV4kQ8y7IQ-Ka4OnzaPZ0hyHqwPugib2ZtGJXcctov4fkB1IXanbqmST52LltvEtqOF1KOj9Eb2uxD2iukap9q59Y_zfsEa8PSe0GmKk0MMkc0cf0v7m6fkpvfFRqhEPLavwWdhffzlT5MHquVbmIUj12M=w1189-h400-no')" id="about"><!-- background image, in landing folder -->
         <div class="overlay"></div><!-- overlay -->
         <div class="grid-container fluid clearfix">            
             <img src="https://lh3.googleusercontent.com/M4EyrIvnDN2qTm4qqIeOuRxaWOC4dFFku69HcBvtjCbaJXxaAcHvFQp5zka1cK41JVNwqwDBXSUEEJudfr8cImN-0J-sL3iHBEB1cyWoEzMIarUDevOolBIOVe4anG-1dUhKRUyBSd2VlzSvP_B9L9-z1MPycRl1LQQTr5JeZe72f-itgMtOssiugjteEohfk3FNjNSZuqq8_1wht5VS34RcCiT43k3n8H3ZfdtzRTsqb6-gvyHU1YKpiDvsFvsyWoHHfJaTYuVaY9-sGqL2Y3OPnaoDI_currQfFPqH5b5RQvon9tsArmjJIi9hCZyOeKoSUu9IJddKGxhnTibE3cujp1rVFl3YI7mr6SCJiKqrZ25cvES_AF0F41bGtwh_2qqwW1NR67ngV65kiRNqSxKWnBJq2aA0ZRanY22W28n4kM6GlHLkg3CfCU0FcMWcDQLgCsnq-E4bjcAQvFZ58k5UGvLCCsFdWmqXn7i2JldeZsgLmoOGdf8Aba-XoD8tu1OaUl9r92yndp_h23QBvlmmFhvDnccSucn2pNEGidYDCIx3rIENfZr3z05SqAx7cBm3kq9a2APjEQ2jWeIf74Za6NEGmSK5f3WlwEbe5LiPGboX4jFe5SLTfqTewsvy2VR0KGr5Hx6k9NVZMOn7GpK03ikSgN0=s903-no" alt="Nelly" class="float-left headshot animate-box"> 
@@ -104,7 +102,7 @@
         <section class="grid-container fluid characters-section" id="characters-section">
             <div class="spacer"></div>
             <header><h2 class="uppercase underline animate-box">characters</h2><!-- capitalize --></header>
-            <div class="grid-x">
+            <div class="grid-x" id="characters">
                 <div class="cell large-4 medium-6 small-12">
                     <div class="hover-box">
                         <div class="hover-box-text text-center">
@@ -202,7 +200,7 @@
 
 
         <!-- donate section -->
-        <section class="donate">
+        <section class="donate" id="donate">
             <div class="grid-x">
                 <div class="cell large-12 medium-12 small-12">
                     <div class="grid-container fluid clearfix text-right image-container">
@@ -222,8 +220,8 @@
         <div id="trigger-2"></div>
     
     <!-- contact section -->
-    <section class="contact" id="target-2" >
-        <div class="grid-container fluid">
+    <section class="contact" id="target-2">
+        <div class="grid-container fluid" id="contact">
             <div class="grid-x align-center"> <!-- upper bar (footer of the landing page) -->
                 <div class="cell large-1">
                     <div class="icons">
@@ -291,14 +289,12 @@
             </div>
         </div>
     </section>
-<!-- appear after the hero section of the landing page -->
-    <div class="arrow">
-        <img src="static/images/landing/up-arrow.png" alt="arrow">
+    <!-- appear after the hero section of the landing page -->
+    <div class="arrow" id="target-3">
+        <a href="#home"><img src="static/images/landing/up-arrow.png" alt="Home" ></a>
     </div> <!-- up arrow -->
 
     <!-- javascript files -->
-
-
 
       <!-- scrollMagic -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>

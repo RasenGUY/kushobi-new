@@ -64,18 +64,19 @@
     function scrollMenu () {
 
         // initialize controller
-        var ctrl = new ScrollMagic.Controller()
+        var ctrl = new ScrollMagic.Controller();
         
         // animation
         var tween = TweenMax.to('.menu-main', 0.25, {y:'0%'});
         var tweenTwo = TweenMax.to('#target-2', 0.25, {y: '-7%'});
+        var tweenThree = TweenMax.to('#target-3', 1, {opacity: '1'});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger-1',
             offset: -500,
             triggerHook: 0
         })
-        .setTween([tween, tweenTwo])
+        .setTween([tween, tweenTwo, tweenThree])
         .addTo(ctrl)
     }
 

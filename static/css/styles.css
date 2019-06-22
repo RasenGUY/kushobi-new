@@ -264,6 +264,7 @@ a {
         -moz-shape-outside: url('https://lh3.googleusercontent.com/Xk_Vqt0tosBKfp8eC7K54LCeNNjHX-hBeSIruoqkakax7gP9ZMInEwsUdlhCqYbSMc-S_10h-EatOdp1Hk2OIdbtSKEBhs-FOlNrRG0KlS4KoKA61N6XLUkSzt1UNBFIIYNKt14DXPdIAR7QY6jWI5kOIeqa0idagiqomzTlFkX9Cznv0ylrI8D7VsR8i5d1UW5D37vWz3_pLOsl2LXBxS8fV595VXwJElTBRvam3DSeDFh2z0b-NSRTf7OAg8HnXYIfNB7lsi9Ca7rp42AkhjqJbYQECBwzsKTuZbNLZkPOhoC88DgarYSfCwXc1p1U9sIf8me9r0ikOrH1d0SwuQVpONM-QS6g1ibNp58w7vg9r4ZO71qtU9gblLPwMXQSa7hD-i8SlU0G-knsCEZLDrm74yHwmO8ttWmWH9AS53q155HwFkWPhg5aVWoQJk9UssOVuxEuPHc7TwWd9l9PyUWOnu2kNyC0tYWQ0YxCEili9-iDYlJ_REWsTS46VsSPsi9wDTGnMKwL8g7yzEjuf_H70oXeCi92GexwtaMsFygE7jHJcfBJ8cg955poRupQ1iXqGb266Z8Gzeqg5RHTyCqPRVtTxGFkHw1EfAIkDHAblK2v9K9dVVtCpzJq-ATog8nuU9uiQVozgEaLDM9yEIMWnqLDGN8=w372-h396-no');
         -o-shape-outside: url('https://lh3.googleusercontent.com/Xk_Vqt0tosBKfp8eC7K54LCeNNjHX-hBeSIruoqkakax7gP9ZMInEwsUdlhCqYbSMc-S_10h-EatOdp1Hk2OIdbtSKEBhs-FOlNrRG0KlS4KoKA61N6XLUkSzt1UNBFIIYNKt14DXPdIAR7QY6jWI5kOIeqa0idagiqomzTlFkX9Cznv0ylrI8D7VsR8i5d1UW5D37vWz3_pLOsl2LXBxS8fV595VXwJElTBRvam3DSeDFh2z0b-NSRTf7OAg8HnXYIfNB7lsi9Ca7rp42AkhjqJbYQECBwzsKTuZbNLZkPOhoC88DgarYSfCwXc1p1U9sIf8me9r0ikOrH1d0SwuQVpONM-QS6g1ibNp58w7vg9r4ZO71qtU9gblLPwMXQSa7hD-i8SlU0G-knsCEZLDrm74yHwmO8ttWmWH9AS53q155HwFkWPhg5aVWoQJk9UssOVuxEuPHc7TwWd9l9PyUWOnu2kNyC0tYWQ0YxCEili9-iDYlJ_REWsTS46VsSPsi9wDTGnMKwL8g7yzEjuf_H70oXeCi92GexwtaMsFygE7jHJcfBJ8cg955poRupQ1iXqGb266Z8Gzeqg5RHTyCqPRVtTxGFkHw1EfAIkDHAblK2v9K9dVVtCpzJq-ATog8nuU9uiQVozgEaLDM9yEIMWnqLDGN8=w372-h396-no');
         shape-margin: 2rem;
+        filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
     }
 
     .donate .image-container div {
@@ -316,10 +317,11 @@ a {
     .contact-img {
         position: relative;
         width: 17rem;
-        left: 10rem;
+        left: 12.5rem;
     }
     .contact-img img {
         width: 100%;
+        filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
         }
 
     
@@ -328,10 +330,16 @@ a {
 .arrow {
     width: 5rem;
     position: fixed;
-    z-index: 100;
-    top: 50rem;
-    left: 105rem;
+    top: 37rem;
+    right: 5rem;
+    /* z-index: 100; */
+    opacity: 0;
+
 }
+    .arrow img {
+        width: 100%;
+        filter: drop-shadow(5px 5px 5px rgba(165, 0, 33, 0.3));
+    }
 
 /* blog page */
 /* .spacer .0 {
