@@ -8,7 +8,6 @@
     scrollContact();
     animateChar();
     animateMockup();
-    scroll();
 
 
     // select navigation
@@ -203,43 +202,24 @@
         });
     };
 
-    // scrolling functionality
-    //  function scroll(){
+    // function scroll functionality
+    var scroll = ()=>{
+        // select menu items 
+        var $menu = $('a[href^="#"]'),
+            $window = $(window);
         
-    //     // initialize controller
-    //     var ctrl = new ScrollMagic.Controller({addIndicators: "true"});
-
-    //     // change behavior of scroll from jump to animate
-    //     ctrl.scrollTo((newpos)=>{
-    //         TweenMax.to(window, 0.5, {scrollTo: {y: newpos}})
-    //     });
-
-    //     // attach the scroll to anchored links\
-    //     $(document).on('click', "a[href^='#']", (e)=>{
-    //         var id = $(this).attr("href");
-    //         if ($(id).length > 0 ) {
-    //             e.preventDefault();
-
-    //             // trigger scroll
-    //             ctrl.scrollTo(id);
-                
-    //             // update the URL.
-    //             if (window.history && window.history.pushState){
-    //                 history.pushState("", document.title, id);
-    //             };
-    //         };
-    //     });
-    // };
-    // scroll();
-
-    // scroll functionality 
-    var $menu = $('.top-bar-right .menu.expanded'),
-        $window = $(window);
-
-    $menu.on('click', 'li a', function(){
-        var $this = $(this),
+        $menu.on('click', function(){
+            var $this = $(this),
             href = $this.attr('href'),
-            topY = $(href).offset().top;
-        console.log(topY)
-        TweenMax.to($window, 2, {scrollTo: {y: topY, autoKill: true}, ease:Power3.easeOut});
-    })
+            topY = $(href).offset().top,
+            offs = 0.15 * topY;
+            topY = topY - offs;
+            TweenMax.to($window, 2, {scrollTo: {y: topY, autoKill: true}, ease:Power3.easeOut});
+            return false;
+        });
+    };
+    scroll()
+
+
+
+ 

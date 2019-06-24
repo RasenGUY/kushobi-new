@@ -319,7 +319,7 @@ a {
         width: 17rem;
         left: 12.5rem;
     }
-    .contact-img a img {
+    .contact-img img {
         width: 100%;
         filter: drop-shadow(10px 10px 5px rgba(165, 0, 33, 0.3));
         }

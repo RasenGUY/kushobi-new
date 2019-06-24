@@ -28,10 +28,9 @@ var menu = $(".menu"),
     win = $(window);
 
     menu.on('click', 'a', function(){
-        console.log("cliked")
-        // var $this = $(this),
-        //     href = $this.attr('href'),
-        //     topY = $(href).offset().top
-        //     TweenMax.to(window, 2, {scrollTo: {y: topY, autoKill: true}, ease:Power3.easeOut});
-        // return false;
+        var $this = $(this),
+            href = $this.attr('href'),
+            topY = $(href).offset().top;
+            TweenMax.to(window, 2, {scrollTo: {y: topY, autoKill: true}, ease:Power3.easeOut});
+        return false;
     })
