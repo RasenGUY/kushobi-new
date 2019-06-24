@@ -8,10 +8,8 @@
     scrollContact();
     animateChar();
     animateMockup();
-    
+    scroll();
 
-
-    // navigation 
 
     // select navigation
     var menuMain = $('#menu-main');
@@ -22,7 +20,7 @@
     var animateBox = $('.animate-box');
     var mockUp = $('.mockUp');
 
-// general rule make all buttons including hero small on small device md on med device, on large make all buttons except hero button md (hero is large) 
+    // general rule make all buttons including hero small on small device md on med device, on large make all buttons except hero button md (hero is large) 
     // load enquire.js
     enquire.register("screen and (max-width: 639px)", {
         
@@ -205,4 +203,43 @@
         });
     };
 
+    // scrolling functionality
+    //  function scroll(){
+        
+    //     // initialize controller
+    //     var ctrl = new ScrollMagic.Controller({addIndicators: "true"});
 
+    //     // change behavior of scroll from jump to animate
+    //     ctrl.scrollTo((newpos)=>{
+    //         TweenMax.to(window, 0.5, {scrollTo: {y: newpos}})
+    //     });
+
+    //     // attach the scroll to anchored links\
+    //     $(document).on('click', "a[href^='#']", (e)=>{
+    //         var id = $(this).attr("href");
+    //         if ($(id).length > 0 ) {
+    //             e.preventDefault();
+
+    //             // trigger scroll
+    //             ctrl.scrollTo(id);
+                
+    //             // update the URL.
+    //             if (window.history && window.history.pushState){
+    //                 history.pushState("", document.title, id);
+    //             };
+    //         };
+    //     });
+    // };
+    // scroll();
+
+    // scroll functionality 
+    var $menu = $('.top-bar-right .menu.expanded'),
+        $window = $(window);
+
+    $menu.on('click', 'li a', function(){
+        var $this = $(this),
+            href = $this.attr('href'),
+            topY = $(href).offset().top;
+        console.log(topY)
+        TweenMax.to($window, 2, {scrollTo: {y: topY, autoKill: true}, ease:Power3.easeOut});
+    })
