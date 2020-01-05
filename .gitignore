@@ -1,4 +1,4 @@
 # ignore images that are uploaded to google photos
-static/images/landing/
-static/images/characters/
-static/images/headshot/
+# static/images/landing/
+# static/images/characters/
+# static/images/headshot/
